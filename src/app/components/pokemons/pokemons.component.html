@@ -1,0 +1,14 @@
+<div class="conntainer">
+    <div class="row">
+        <div class="col-md-4" *ngFor="let poke of pokemons.results">
+            <div class="card" style="width: 18rem;">
+                <div class="card-body">
+                  <h5 class="card-title"> {{ poke.name }}</h5>
+                  <p class="card-text"> {{ poke.url }} </p>
+                  <a class="btn btn-primary" (click)="showPoke( poke.name )" > VER POKEMON</a>
+                </div>
+              </div>
+        </div>
+    </div>
+</div>
+
